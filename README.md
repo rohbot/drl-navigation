@@ -41,12 +41,12 @@ The task is episodic, and in order to solve the environment, your agent must get
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
 ### Running Agent
-To start training, simply open Navigation.ipynb in Jupyter Notebook and follow the instructions there:
+To start training, simply open [*Navigation.ipynb*](Navigation.ipynb) in Jupyter Notebook and follow the instructions there:
 
 Start Jupyter Notebook
 
 `jupyter notebook`
 
-Trained model weights is included for quickly running the agent and see the result in Unity ML Agent. Simply skip the training step and run the last step of the [*Trained Agent Navigation.ipynb*](Trained%20Agent%20Navigation.ipynb)
+Trained model weights is included for quickly running the agent and see the result in Unity ML Agent. Simply skip the training step and run the [*Trained Agent Navigation.ipynb*](Trained%20Agent%20Navigation.ipynb) in Jupyter Notebook
 
 

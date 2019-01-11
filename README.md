@@ -24,9 +24,11 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 1. Clone repository 
 
+`git clone https://github.com/rohbot/drl-navigation.git`
 
 2. Install Dependencies
 
+`pip install -r requirements.txt`
 
 3. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
@@ -43,8 +45,8 @@ To start training, simply open Navigation.ipynb in Jupyter Notebook and follow t
 
 Start Jupyter Notebook
 
-jupyter notebook
+`jupyter notebook`
 
-Trained model weights is included for quickly running the agent and see the result in Unity ML Agent. Simply skip the training step and run the last step of the Trained Agent Navigation.ipynb
+Trained model weights is included for quickly running the agent and see the result in Unity ML Agent. Simply skip the training step and run the last step of the [*Trained Agent Navigation.ipynb*](Trained%20Agent%20Navigation.ipynb)
 
 

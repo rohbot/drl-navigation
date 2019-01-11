@@ -15,7 +15,7 @@ The implementation split into a few smaller modules:
 
 ### DQN Model
 
-  
+
 
 
 
@@ -32,5 +32,5 @@ alt="DQN Banana Collector" width="240" height="180" border="10" /></a>
 
 ## Further Improvements
 ---
-* Double Q 
-* 
+* Implement improves to DQN algorithm as suggest in  [Rainbow: Combining Improvements in Deep Reinforcement Learning] paper(https://arxiv.org/abs/1710.02298) 
+* Better tuning of hyperparameters, including larger  

@@ -44,25 +44,47 @@ The agent comprises of a pair of neural networks, the local and the target netwo
 
 The initial parameters were set to the same values as in [Deep_Q_Network_Solution.ipynb](https://github.com/udacity/deep-reinforcement-learning/blob/master/dqn/solution/Deep_Q_Network_Solution.ipynb)
 
-n_episodes=2000			# number of episodes		 
-max_t=1000 				# max number of timestep per episode
-eps_start=1.0			# starting epsilon value
-eps_end=0.01			# end epsilon value
-eps_decay=0.995 		# epsilon decay value
-BUFFER_SIZE = int(1e5)  # replay buffer size
-BATCH_SIZE = 64         # minibatch size
-GAMMA = 0.99            # discount factor
-TAU = 1e-3              # for soft update of target parameters
-LR = 5e-4               # learning rate 
-UPDATE_EVERY = 4        # how often to update the network
+	n_episodes=2000			# number of episodes		 
+	max_t=1000 				# max number of timestep per episode
+	eps_start=1.0			# starting epsilon value
+	eps_end=0.01			# end epsilon value
+	eps_decay=0.995 		# epsilon decay value
+	BUFFER_SIZE = int(1e5)  # replay buffer size
+	BATCH_SIZE = 64         # minibatch size
+	GAMMA = 0.99            # discount factor
+	TAU = 1e-3              # for soft update of target parameters
+	LR = 5e-4               # learning rate 
+	UPDATE_EVERY = 4        # how often to update the network
 
+This leads to an agent that can achieve an average score of 13.06 after 467 episodes
 
+![alt text](data/images/untuned-params.png "Untuned Parameters")
+
+By adjusting some of the hyperparameters the agent trained significantly faster.
+
+	n_episodes=1000			# number of episodes		 
+	max_t=10000 			# max number of timesteps per episode
+	eps_start=0.5			# starting epsilon value
+	eps_end=0.01			# end epsilon value
+	eps_decay=0.98 			# epsilon decay value
+	BUFFER_SIZE = int(1e6)  # replay buffer size
+	BATCH_SIZE = 128        # minibatch size
+	GAMMA = 0.99            # discount factor
+	TAU = 1e-3              # for soft update of target parameters
+	LR = 0.0001             # learning rate 
+	UPDATE_EVERY = 2        # how often to update the network
+
+![alt text](data/images/episodes.png "Training Episodes")
+The agent achieves a score of 13.01 after 163 episodes
+
+By increasing the number of timesteps per episode it gave the agents a greater chance of obtaining a higher score per episode
+Reducing the epsilon starting values to reduce the amount of time an agent picks moves at random initially
+The BUFFER_SIZE and BATCH_SIZE were increased to allow the networks to train on more data quickly.
+Also the learning rate and UPDATE_EVERY were decreased to allow faster learning now that there is more data to be trained on  
 
 
 ## Results
 
-![alt text](data/images/episodes.png "Training Episodes")
-The agent achieves a score of 13.01 after 163 episodes
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=TcdwhNYr7Hc
 " target="_blank"><img src="http://img.youtube.com/vi/TcdwhNYr7Hc/0.jpg" 

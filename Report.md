@@ -11,7 +11,11 @@ The implementation split into a few smaller modules:
 
 * model.py - Neural Network model implemented with PyTorch
 * dqn_agent.py - DQN agent implementation as describe in [paper](https://www.nature.com/articles/nature14236) mentioned above
-* Navigation.ipynb - Imports all required modules and  
+* Navigation.ipynb - imports all required modules and allows the enviroment to be explored and the agent trained
+
+### DQN Model
+
+  
 
 
 
